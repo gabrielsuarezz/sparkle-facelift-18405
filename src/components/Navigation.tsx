@@ -27,6 +27,11 @@ export const Navigation = () => {
               Learn More
             </Button>
           </Link>
+          <Link to="/meet-the-team">
+            <Button variant="ghost" className="font-medium text-foreground hover:text-primary transition-colors">
+              Meet the Team
+            </Button>
+          </Link>
           <Button 
             onClick={scrollToChat}
             className="bg-primary text-primary-foreground font-medium hover:shadow-[var(--shadow-glow)] hover:bg-primary/90 transition-all"
