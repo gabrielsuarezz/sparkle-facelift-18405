@@ -71,10 +71,14 @@ const Index = () => {
                 <TrendingDown className="h-8 w-8 text-destructive" />
                 <h2 className="text-3xl font-bold text-foreground">The Problem</h2>
               </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Electricity costs are skyrocketing, especially in areas with data centers. In regions like Baltimore, 
+                wholesale electricity now costs <span className="text-destructive font-semibold">up to 267% more</span> than 
+                it did five years ago - and those costs are being passed directly to residential customers.
+              </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Rising electricity costs and deteriorating electrical infrastructure are putting a strain on communities. 
-                Families are struggling with increasing energy bills, and many solar companies add 20-30% markups, 
-                making clean energy even less accessible.
+                Meanwhile, many solar companies add 20-30% middleman markups, making clean energy solutions 
+                even less accessible when families need them most.
               </p>
             </Card>
 

@@ -54,13 +54,20 @@ const LearnMore = () => {
                   <h2 className="text-3xl font-bold text-foreground">The Challenge We Face</h2>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Electricity costs continue to rise while our electrical infrastructure deteriorates. 
-                  Families are facing higher bills every month, and our power grids are becoming less 
-                  reliable. This isn't sustainable, and we need solutions now.
+                  Electricity costs are reaching crisis levels. In areas where data centers are being built, 
+                  wholesale electricity prices have surged <span className="text-destructive font-semibold">up to 267% 
+                  higher</span> than they were just five years ago. These massive increases are being passed 
+                  directly to residential customers.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Regions like Baltimore, Maryland are experiencing the impact firsthand. Families report bills 
+                  they can no longer afford, with many struggling to understand why their costs have increased 
+                  so dramatically. As tech companies build more AI and cloud computing infrastructure, the strain 
+                  on local power grids intensifies.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Traditional energy sources are not only expensive but also contribute to environmental 
-                  challenges. Communities deserve better – more reliable, affordable, and cleaner energy options.
+                  This isn't sustainable. Communities deserve energy solutions that are reliable, affordable, 
+                  and don't force them to compete with massive data centers for power resources.
                 </p>
               </Card>
             </section>
