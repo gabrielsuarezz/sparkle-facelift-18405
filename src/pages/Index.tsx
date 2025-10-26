@@ -66,14 +66,15 @@ const Index = () => {
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <Card className="p-8 border-2 hover:border-destructive/50 transition-all hover:shadow-lg">
+            <Card className="p-8 border-2 hover:border-destructive/50 transition-all hover:shadow-lg group">
               <div className="flex items-center gap-3 mb-4">
                 <TrendingDown className="h-8 w-8 text-destructive" />
                 <h2 className="text-3xl font-bold text-foreground">The Problem</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Rising electricity costs and deteriorating electrical infrastructure are putting a strain on communities. 
-                Families are struggling with increasing energy bills while our power systems become less reliable.
+                Families are struggling with increasing energy bills, and many solar companies add 20-30% markups, 
+                making clean energy even less accessible.
               </p>
             </Card>
 
@@ -83,7 +84,7 @@ const Index = () => {
                 <h2 className="text-3xl font-bold text-foreground">The Solution</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Education on alternative energy solutions, advocacy for eliminating sales tax on solar installation, 
+                Direct-to-consumer education on alternative energy solutions, cutting out middleman markups, 
                 and innovative technology like our sun-tracking solar panel that maximizes energy output.
               </p>
             </Card>

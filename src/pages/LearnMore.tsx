@@ -100,38 +100,39 @@ const LearnMore = () => {
               </Card>
             </section>
 
-            {/* Tax Issue */}
+            {/* Middleman Issue */}
             <section className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <Card className="p-8 border-2 border-secondary/50 hover:shadow-[var(--shadow-panel)] transition-all">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-secondary/10 rounded-full">
                     <Battery className="h-8 w-8 text-secondary" />
                   </div>
-                  <h2 className="text-3xl font-bold text-foreground">The Solar Sales Tax Issue</h2>
+                  <h2 className="text-3xl font-bold text-foreground">Cutting Out the Middleman</h2>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Currently, solar panel installation is subject to sales tax in many states, making 
-                  it less affordable for average families. This tax barrier prevents many from accessing 
-                  clean, renewable energy.
+                  Many solar companies add 20-30% markups to installations, making this life-changing 
+                  technology unnecessarily expensive. These middleman costs create a significant barrier 
+                  to adoption, especially for families who need affordable energy solutions most.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  We're advocating for the elimination of sales tax on solar installations to make 
-                  sustainable energy accessible to everyone, not just those who can afford the upfront costs.
+                  We're working to eliminate these unnecessary markups by providing direct-to-consumer 
+                  education and resources. By cutting out the middleman, we can make solar energy 
+                  accessible and affordable for everyone in our community.
                 </p>
                 <div className="bg-gradient-to-r from-secondary/10 to-primary/10 p-6 rounded-lg border border-border">
-                  <p className="font-semibold text-lg mb-4 text-foreground">What You Can Do:</p>
+                  <p className="font-semibold text-lg mb-4 text-foreground">Our Approach:</p>
                   <ul className="space-y-3">
                     <li className="flex gap-3 items-start">
                       <div className="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
-                      <span className="text-muted-foreground">Contact your local representatives about solar tax exemptions</span>
+                      <span className="text-muted-foreground">Educate the community on direct installation options</span>
                     </li>
                     <li className="flex gap-3 items-start">
                       <div className="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
-                      <span className="text-muted-foreground">Share information about solar benefits with your community</span>
+                      <span className="text-muted-foreground">Connect families with transparent, fair-priced solar solutions</span>
                     </li>
                     <li className="flex gap-3 items-start">
                       <div className="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
-                      <span className="text-muted-foreground">Support legislation that promotes renewable energy adoption</span>
+                      <span className="text-muted-foreground">Provide resources to understand true installation costs</span>
                     </li>
                   </ul>
                 </div>
