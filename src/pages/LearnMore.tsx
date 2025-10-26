@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
-import { Sun, Battery, TrendingUp, Shield, Wrench } from "lucide-react";
+import { Battery, TrendingUp, Shield, Wrench } from "lucide-react";
+import { SunGearLogo } from "@/components/SunGearLogo";
 
 const LearnMore = () => {
   return (
@@ -17,10 +18,10 @@ const LearnMore = () => {
           </p>
 
           <div className="space-y-8">
-            <Card className="p-8 border-2 border-primary/30 hover:border-primary/50 transition-all">
+            <Card className="p-8 border-2 border-primary/30 hover:border-primary/50 transition-all group">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-accent rounded-full shrink-0">
-                  <Sun className="h-8 w-8 text-primary" />
+                <div className="p-3 bg-accent rounded-full shrink-0 group-hover:scale-110 transition-transform">
+                  <SunGearLogo className="h-8 w-8" />
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold mb-3 text-foreground">Why Solar Energy?</h2>
