@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Linkedin } from "lucide-react";
 import leoImage from "@/assets/leo.png";
 import pabloImage from "@/assets/pablo.png";
+import gabrielImage from "@/assets/gabriel.png";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -14,7 +15,7 @@ const MeetTheTeam = () => {
       bio: "Passionate about renewable energy and community empowerment.",
       initials: "GS",
       linkedin: "https://www.linkedin.com/in/gabrielsuarezz/",
-      image: "/placeholder.svg"
+      image: gabrielImage
     },
     {
       name: "Pablo Molina",
