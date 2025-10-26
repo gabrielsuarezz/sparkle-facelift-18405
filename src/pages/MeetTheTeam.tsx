@@ -6,6 +6,7 @@ import { Linkedin } from "lucide-react";
 import leoImage from "@/assets/leo.png";
 import pabloImage from "@/assets/pablo.png";
 import gabrielImage from "@/assets/gabriel.png";
+import anastasiaImage from "@/assets/anastasia.png";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -39,7 +40,7 @@ const MeetTheTeam = () => {
       bio: "Committed to sustainable energy solutions and education.",
       initials: "AT",
       linkedin: "https://www.linkedin.com/in/anastasia-tarasenko-382293172/",
-      image: "/placeholder.svg"
+      image: anastasiaImage
     }
   ];
 
