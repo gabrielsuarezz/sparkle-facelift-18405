@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Linkedin } from "lucide-react";
 import leoImage from "@/assets/leo.png";
+import pabloImage from "@/assets/pablo.png";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -21,7 +22,7 @@ const MeetTheTeam = () => {
       bio: "Dedicated to making solar energy accessible to everyone.",
       initials: "PM",
       linkedin: "https://www.linkedin.com/in/pablo-molina-ro/",
-      image: "/placeholder.svg"
+      image: pabloImage
     },
     {
       name: "Leo Sadoun",
