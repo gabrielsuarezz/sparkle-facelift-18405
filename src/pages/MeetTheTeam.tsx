@@ -7,35 +7,35 @@ import { Linkedin } from "lucide-react";
 const MeetTheTeam = () => {
   const teamMembers = [
     {
-      name: "Team Member 1",
+      name: "Gabriel Suarez",
       role: "Co-Founder",
       bio: "Passionate about renewable energy and community empowerment.",
-      initials: "TM",
-      linkedin: "#",
+      initials: "GS",
+      linkedin: "https://www.linkedin.com/in/gabrielsuarezz/",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 2",
+      name: "Pablo Molina",
       role: "Co-Founder",
       bio: "Dedicated to making solar energy accessible to everyone.",
-      initials: "TM",
-      linkedin: "#",
+      initials: "PM",
+      linkedin: "https://www.linkedin.com/in/pablo-molina-ro/",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 3",
+      name: "Leo Sadoun",
       role: "Co-Founder",
       bio: "Innovating to bring down energy costs for communities.",
-      initials: "TM",
-      linkedin: "#",
+      initials: "LS",
+      linkedin: "https://www.linkedin.com/in/leo-sadoun/",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Member 4",
+      name: "Anastasia Tarasenko",
       role: "Co-Founder",
       bio: "Committed to sustainable energy solutions and education.",
-      initials: "TM",
-      linkedin: "#",
+      initials: "AT",
+      linkedin: "https://www.linkedin.com/in/anastasia-tarasenko-382293172/",
       image: "/placeholder.svg"
     }
   ];
