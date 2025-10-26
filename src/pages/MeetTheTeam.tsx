@@ -71,9 +71,9 @@ const MeetTheTeam = () => {
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="relative mb-4">
-                    <Avatar className="h-32 w-32 border-4 border-primary/20 group-hover:border-primary/40 transition-all">
+                    <Avatar className="h-48 w-48 border-4 border-primary/20 group-hover:border-primary/40 transition-all">
                       <AvatarImage src={member.image} alt={member.name} />
-                      <AvatarFallback className="bg-accent text-2xl font-bold text-primary">
+                      <AvatarFallback className="bg-accent text-3xl font-bold text-primary">
                         {member.initials}
                       </AvatarFallback>
                     </Avatar>
