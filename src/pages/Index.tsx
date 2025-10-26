@@ -18,13 +18,13 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-accent/30 to-background pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/20 to-background pointer-events-none" />
         
-        {/* Animated sun rays */}
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        {/* Animated glow effects */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
-          <div className="absolute inset-0 bg-gradient-conic from-primary/5 via-transparent to-transparent animate-[spin_40s_linear_infinite]" />
+          <div className="absolute inset-0 bg-gradient-conic from-primary/10 via-transparent to-transparent animate-[spin_40s_linear_infinite]" />
         </div>
         
         <div className="container mx-auto text-center relative z-10">
@@ -35,7 +35,7 @@ const Index = () => {
             </div>
           </div>
           
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-[hsl(35,100%,58%)] to-secondary bg-clip-text text-transparent animate-fade-in">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-fade-in">
             HELIOS
           </h1>
           
@@ -53,7 +53,7 @@ const Index = () => {
             <Button 
               size="lg" 
               onClick={scrollToChat}
-              className="bg-gradient-to-r from-primary to-[hsl(35,100%,58%)] hover:shadow-[var(--shadow-glow)] transition-all"
+              className="bg-primary text-primary-foreground hover:shadow-[var(--shadow-glow)] hover:bg-primary/90 transition-all"
             >
               Chat w/ Us
               <Zap className="ml-2 h-5 w-5" />
@@ -63,7 +63,7 @@ const Index = () => {
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section className="py-20 px-4 bg-accent/30">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <Card className="p-8 border-2 hover:border-destructive/50 transition-all hover:shadow-lg group">

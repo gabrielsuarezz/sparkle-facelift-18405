@@ -29,7 +29,7 @@ const LearnMore = () => {
               <SunGearLogo className="h-20 w-20 animate-[spin_20s_linear_infinite]" />
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-[hsl(35,100%,58%)] to-secondary bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Learn More About Our Mission
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
@@ -185,7 +185,7 @@ const LearnMore = () => {
           {/* CTA */}
           <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <Link to="/">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-[hsl(35,100%,58%)] hover:shadow-[var(--shadow-glow)] transition-all text-lg px-8 py-6">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:shadow-[var(--shadow-glow)] hover:bg-primary/90 transition-all text-lg px-8 py-6">
                 Have Questions? Chat With Us
                 <Zap className="ml-2 h-5 w-5" />
               </Button>

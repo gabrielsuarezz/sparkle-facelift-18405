@@ -10,7 +10,7 @@ export const SunGearLogo = ({ className, animate = true }: SunGearLogoProps) => 
     <svg
       viewBox="0 0 100 100"
       className={cn(
-        "text-primary",
+        "text-secondary",
         animate && "transition-transform hover:rotate-180 duration-500",
         className
       )}

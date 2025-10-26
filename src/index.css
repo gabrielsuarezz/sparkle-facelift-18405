@@ -8,82 +8,76 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Solar-inspired color palette */
-    --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    /* Dashboard-inspired dark theme */
+    --background: 225 35% 12%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card: 225 30% 18%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 225 30% 15%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Bright solar yellow as primary */
-    --primary: 45 100% 51%;
-    --primary-foreground: 215 25% 15%;
+    /* Cyan/turquoise for primary (like the metrics) */
+    --primary: 180 80% 55%;
+    --primary-foreground: 225 35% 12%;
 
-    /* Deep solar panel blue as secondary */
-    --secondary: 215 85% 35%;
-    --secondary-foreground: 0 0% 100%;
+    /* Yellow-green accent (like the Predictive button) */
+    --secondary: 65 85% 60%;
+    --secondary-foreground: 225 35% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 225 25% 25%;
+    --muted-foreground: 210 20% 70%;
 
-    /* Light solar glow for accents */
-    --accent: 45 100% 90%;
-    --accent-foreground: 215 25% 15%;
+    --accent: 225 30% 22%;
+    --accent-foreground: 180 80% 55%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 45 100% 51%;
+    --border: 225 25% 30%;
+    --input: 225 25% 25%;
+    --ring: 180 80% 55%;
 
     --radius: 0.75rem;
 
-    /* Solar gradient tokens */
-    --gradient-solar: linear-gradient(135deg, hsl(45 100% 51%), hsl(35 100% 58%));
-    --gradient-panel: linear-gradient(135deg, hsl(215 85% 35%), hsl(220 80% 45%));
-    --gradient-sky: linear-gradient(180deg, hsl(200 100% 85%), hsl(45 100% 90%));
-
-    /* Animation tokens */
+    /* Animation and shadow tokens */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --shadow-glow: 0 0 30px hsl(45 100% 51% / 0.3);
-    --shadow-panel: 0 10px 30px -10px hsl(215 85% 35% / 0.3);
+    --shadow-glow: 0 0 30px hsl(180 80% 55% / 0.3);
+    --shadow-panel: 0 8px 30px rgba(0, 0, 0, 0.4);
   }
 
   .dark {
-    --background: 215 30% 8%;
-    --foreground: 0 0% 98%;
+    --background: 225 35% 12%;
+    --foreground: 0 0% 100%;
 
-    --card: 215 25% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 225 30% 18%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 215 25% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 225 30% 15%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 45 100% 55%;
-    --primary-foreground: 215 25% 15%;
+    --primary: 180 80% 55%;
+    --primary-foreground: 225 35% 12%;
 
-    --secondary: 215 70% 45%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 65 85% 60%;
+    --secondary-foreground: 225 35% 12%;
 
-    --muted: 215 20% 20%;
-    --muted-foreground: 215 10% 65%;
+    --muted: 225 25% 25%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 45 90% 25%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 225 30% 22%;
+    --accent-foreground: 180 80% 55%;
 
-    --destructive: 0 70% 45%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 20%;
-    --input: 215 20% 20%;
-    --ring: 45 100% 55%;
+    --border: 225 25% 30%;
+    --input: 225 25% 25%;
+    --ring: 180 80% 55%;
 
-    --shadow-glow: 0 0 30px hsl(45 100% 55% / 0.2);
-    --shadow-panel: 0 10px 30px -10px hsl(215 70% 45% / 0.4);
+    --shadow-glow: 0 0 30px hsl(180 80% 55% / 0.3);
+    --shadow-panel: 0 8px 30px rgba(0, 0, 0, 0.4);
   }
 }
 

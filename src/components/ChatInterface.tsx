@@ -75,9 +75,9 @@ export const ChatInterface = () => {
   };
 
   return (
-    <Card className="flex flex-col h-[600px] border-2 border-secondary/50 shadow-[var(--shadow-panel)] overflow-hidden">
+    <Card className="flex flex-col h-[600px] border-2 border-border/50 shadow-[var(--shadow-panel)] overflow-hidden bg-card">
       {/* Chat Header */}
-      <div className="bg-gradient-to-r from-primary to-secondary p-4 text-primary-foreground">
+      <div className="bg-gradient-to-r from-primary/90 to-secondary/90 p-4 text-background">
         <div className="flex items-center gap-2">
           <Sparkles className="h-5 w-5" />
           <h3 className="font-semibold">Helios AI Assistant</h3>
@@ -88,7 +88,7 @@ export const ChatInterface = () => {
       </div>
 
       {/* Messages Area */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-muted/20">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-accent/20">
         {messages.length === 0 && (
           <div className="flex items-center justify-center h-full text-center">
             <div className="space-y-3">
@@ -110,7 +110,7 @@ export const ChatInterface = () => {
             <div
               className={`max-w-[80%] p-4 rounded-lg ${
                 message.role === "user"
-                  ? "bg-gradient-to-r from-primary to-secondary text-primary-foreground ml-4"
+                  ? "bg-primary text-primary-foreground ml-4"
                   : "bg-card border border-border mr-4"
               }`}
             >
@@ -133,7 +133,7 @@ export const ChatInterface = () => {
       </div>
 
       {/* Input Area */}
-      <div className="p-4 border-t bg-background">
+      <div className="p-4 border-t border-border bg-card">
         <div className="flex gap-2">
           <Input
             value={input}
@@ -141,12 +141,12 @@ export const ChatInterface = () => {
             onKeyPress={handleKeyPress}
             placeholder="Type your message..."
             disabled={isLoading}
-            className="flex-1"
+            className="flex-1 bg-input border-border"
           />
           <Button
             onClick={handleSend}
             disabled={!input.trim() || isLoading}
-            className="bg-gradient-to-r from-primary to-secondary hover:shadow-[var(--shadow-glow)] transition-all"
+            className="bg-primary text-primary-foreground hover:shadow-[var(--shadow-glow)] hover:bg-primary/90 transition-all"
           >
             {isLoading ? (
               <Loader2 className="h-5 w-5 animate-spin" />
