@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Linkedin } from "lucide-react";
+import leoImage from "@/assets/leo.png";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -28,7 +29,7 @@ const MeetTheTeam = () => {
       bio: "Innovating to bring down energy costs for communities.",
       initials: "LS",
       linkedin: "https://www.linkedin.com/in/leo-sadoun/",
-      image: "/placeholder.svg"
+      image: leoImage
     },
     {
       name: "Anastasia Tarasenko",
