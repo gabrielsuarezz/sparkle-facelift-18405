@@ -1,6 +1,8 @@
 import { Navigation } from "@/components/Navigation";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Battery, TrendingUp, Shield, Wrench } from "lucide-react";
+import { ArrowLeft, Sun, Battery, TrendingDown, Zap, Shield, Leaf, DollarSign, TrendingUp, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
 import { SunGearLogo } from "@/components/SunGearLogo";
 
 const LearnMore = () => {
@@ -8,92 +10,178 @@ const LearnMore = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <div className="pt-24 pb-20 px-4">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-16 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/20 to-background pointer-events-none" />
+        <div className="absolute top-20 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        
+        <div className="container mx-auto max-w-4xl relative z-10">
+          <Link to="/">
+            <Button variant="ghost" className="mb-8 hover:text-primary transition-colors">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
+
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-flex items-center justify-center mb-6 relative">
+              <SunGearLogo className="h-20 w-20 animate-[spin_20s_linear_infinite]" />
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-[hsl(35,100%,58%)] to-secondary bg-clip-text text-transparent">
+              Learn More About Our Mission
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground">
+              Understanding the solar solution and our innovative technology
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <div className="pb-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Learn More About Our Solution
-          </h1>
-          <p className="text-xl text-muted-foreground mb-12">
-            Discover how solar energy can transform our community and why eliminating the solar sales tax matters.
-          </p>
+          <div className="space-y-16">
 
-          <div className="space-y-8">
-            <Card className="p-8 border-2 border-primary/30 hover:border-primary/50 transition-all group">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-accent rounded-full shrink-0 group-hover:scale-110 transition-transform">
-                  <SunGearLogo className="h-8 w-8" />
+            {/* The Challenge */}
+            <section className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <Card className="p-8 border-2 hover:border-destructive/50 transition-all hover:shadow-lg group">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-3 bg-destructive/10 rounded-full group-hover:scale-110 transition-transform">
+                    <TrendingDown className="h-8 w-8 text-destructive" />
+                  </div>
+                  <h2 className="text-3xl font-bold text-foreground">The Challenge We Face</h2>
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold mb-3 text-foreground">Why Solar Energy?</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    Solar energy is clean, renewable, and increasingly affordable. By harnessing the power of the sun, 
-                    households can reduce their electricity bills by up to 70% while decreasing their carbon footprint. 
-                    Unlike traditional energy sources, solar panels require minimal maintenance and can last 25+ years.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    With rising electricity costs and aging infrastructure, solar energy offers a sustainable path forward 
-                    that benefits both families and the environment.
-                  </p>
-                </div>
-              </div>
-            </Card>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Electricity costs continue to rise while our electrical infrastructure deteriorates. 
+                  Families are facing higher bills every month, and our power grids are becoming less 
+                  reliable. This isn't sustainable, and we need solutions now.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Traditional energy sources are not only expensive but also contribute to environmental 
+                  challenges. Communities deserve better – more reliable, affordable, and cleaner energy options.
+                </p>
+              </Card>
+            </section>
 
-            <Card className="p-8 border-2 border-secondary/30 hover:border-secondary/50 transition-all">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-secondary/10 rounded-full shrink-0">
-                  <Shield className="h-8 w-8 text-secondary" />
+            {/* Why Solar */}
+            <section className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <Card className="p-8 border-2 border-primary/50 hover:border-primary hover:shadow-[var(--shadow-glow)] transition-all">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="p-3 bg-primary/10 rounded-full">
+                    <Sun className="h-8 w-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl font-bold text-foreground">Why Solar Energy?</h2>
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold mb-3 text-foreground">The Solar Sales Tax Issue</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    Currently, solar panel installation is subject to sales tax, making this life-changing technology 
-                    less accessible to families who need it most. This tax creates a significant barrier to adoption, 
-                    especially for low and middle-income households.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We're advocating for the elimination of this tax to make solar energy accessible to everyone. 
-                    By removing this barrier, we can accelerate the transition to clean energy and help more families 
-                    reduce their energy costs.
-                  </p>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-accent/30 p-6 rounded-lg hover:shadow-md transition-all hover:-translate-y-1">
+                    <DollarSign className="h-10 w-10 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Cost Savings</h3>
+                    <p className="text-muted-foreground">
+                      Reduce electricity bills by 50-90%. Most systems pay for themselves within 7-10 years.
+                    </p>
+                  </div>
+                  <div className="bg-accent/30 p-6 rounded-lg hover:shadow-md transition-all hover:-translate-y-1">
+                    <Shield className="h-10 w-10 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Energy Independence</h3>
+                    <p className="text-muted-foreground">
+                      Generate clean energy and reduce grid reliance. Power your home during outages.
+                    </p>
+                  </div>
+                  <div className="bg-accent/30 p-6 rounded-lg hover:shadow-md transition-all hover:-translate-y-1">
+                    <Leaf className="h-10 w-10 text-primary mb-4" />
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Environmental Impact</h3>
+                    <p className="text-muted-foreground">
+                      Zero emissions. Offset 3-4 tons of CO₂ annually – like planting 100 trees.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </section>
 
-            <Card className="p-8 border-2 border-primary/30 hover:border-primary/50 transition-all">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-accent rounded-full shrink-0">
-                  <Wrench className="h-8 w-8 text-primary" />
+            {/* Tax Issue */}
+            <section className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <Card className="p-8 border-2 border-secondary/50 hover:shadow-[var(--shadow-panel)] transition-all">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-3 bg-secondary/10 rounded-full">
+                    <Battery className="h-8 w-8 text-secondary" />
+                  </div>
+                  <h2 className="text-3xl font-bold text-foreground">The Solar Sales Tax Issue</h2>
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold mb-3 text-foreground">Our Innovation: Sun-Tracking Solar Panel</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    We've developed a physical prototype of a light-tracking solar panel system that automatically 
-                    adjusts its position throughout the day to follow the sun's movement across the sky. This innovation 
-                    can increase energy capture by up to 40% compared to fixed solar panels.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Our sun-tracking system demonstrates that with innovation and engineering, we can maximize the 
-                    efficiency of solar technology and make renewable energy even more compelling for households.
-                  </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Currently, solar panel installation is subject to sales tax in many states, making 
+                  it less affordable for average families. This tax barrier prevents many from accessing 
+                  clean, renewable energy.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  We're advocating for the elimination of sales tax on solar installations to make 
+                  sustainable energy accessible to everyone, not just those who can afford the upfront costs.
+                </p>
+                <div className="bg-gradient-to-r from-secondary/10 to-primary/10 p-6 rounded-lg border border-border">
+                  <p className="font-semibold text-lg mb-4 text-foreground">What You Can Do:</p>
+                  <ul className="space-y-3">
+                    <li className="flex gap-3 items-start">
+                      <div className="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Contact your local representatives about solar tax exemptions</span>
+                    </li>
+                    <li className="flex gap-3 items-start">
+                      <div className="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Share information about solar benefits with your community</span>
+                    </li>
+                    <li className="flex gap-3 items-start">
+                      <div className="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Support legislation that promotes renewable energy adoption</span>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </section>
 
-            <Card className="p-8 bg-gradient-to-br from-accent/50 to-secondary/10 border-2 border-primary/50">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/20 rounded-full shrink-0">
-                  <TrendingUp className="h-8 w-8 text-primary" />
+            {/* Innovation */}
+            <section className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <Card className="p-8 border-2 border-primary/50 bg-gradient-to-br from-accent/30 via-accent/10 to-background hover:shadow-[var(--shadow-glow)] transition-all">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-3 bg-primary/10 rounded-full">
+                    <SunGearLogo className="h-8 w-8" />
+                  </div>
+                  <h2 className="text-3xl font-bold text-foreground">Our Innovation: Sun-Tracking Solar Panel</h2>
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold mb-3 text-foreground">The Impact</h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    By combining education, policy advocacy, and technological innovation, we're working to create 
-                    lasting change. Our goal is to empower communities to take control of their energy future, 
-                    reduce costs, and build a more sustainable world for future generations.
-                  </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  We've developed a revolutionary sun-tracking solar panel system that automatically 
+                  follows the sun's path throughout the day. This innovation can increase energy 
+                  output by <span className="text-primary font-semibold">up to 40%</span> compared to fixed solar panels.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-card p-6 rounded-lg border border-border hover:border-primary/50 transition-all hover:-translate-y-1 group">
+                    <Zap className="h-10 w-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Smart Tracking</h3>
+                    <p className="text-muted-foreground">
+                      Our system uses sensors and motors to automatically adjust panel angle and 
+                      orientation for optimal sun exposure all day long.
+                    </p>
+                  </div>
+                  <div className="bg-card p-6 rounded-lg border border-border hover:border-secondary/50 transition-all hover:-translate-y-1 group">
+                    <Battery className="h-10 w-10 text-secondary mb-4 group-hover:scale-110 transition-transform" />
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Maximum Efficiency</h3>
+                    <p className="text-muted-foreground">
+                      By maintaining optimal angles, our panels capture significantly more energy, 
+                      reducing payback time and maximizing your investment.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </section>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <Link to="/">
+              <Button size="lg" className="bg-gradient-to-r from-primary to-[hsl(35,100%,58%)] hover:shadow-[var(--shadow-glow)] transition-all text-lg px-8 py-6">
+                Have Questions? Chat With Us
+                <Zap className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
