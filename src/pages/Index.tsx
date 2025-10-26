@@ -30,7 +30,7 @@ const Index = () => {
         <div className="container mx-auto text-center relative z-10">
           <div className="inline-flex items-center justify-center mb-6">
             <div className="relative">
-              <SunGearLogo className="h-24 w-24 animate-[spin_20s_linear_infinite]" />
+              <SunGearLogo className="h-24 w-24 animate-[spin_60s_linear_infinite]" />
               <div className="absolute inset-0 bg-primary/30 rounded-full blur-2xl animate-pulse" />
             </div>
           </div>
